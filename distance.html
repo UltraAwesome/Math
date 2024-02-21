@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distance</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+  <div style="text-align: center;">
+  <script>
+
+    // Distance Formula
+    let solve = function() {
+        let x1 = document.getElementById('x1').value;
+        let y1 = document.getElementById('y1').value;
+        let x2 = document.getElementById('x2').value;
+        let y2 = document.getElementById('y2').value;
+        let y = (y1-y2)**2;
+        let x = (x1-x2)**2;
+        let next = x + y;
+        let distance = Math.sqrt(next);
+        let newText = "Answer:" + " " + distance;
+        document.getElementById('myAnswer').innerHTML = newText;
+        console.log(distance);
+    };
+  </script>
+    <a href="index.html">Home Page</a>
+    <h1>Distance</h1>
+    <h2>X1:
+        <input type="text" id="x1"/>Y1:
+        <input type="text" id="y1"/>
+    </h2>
+    <h2>X2:
+        <input type="text" id="x2"/>Y2:
+        <input type="text" id="y2"/>
+    </h2>
+    <button id="solveButton" onclick="solve()">Solve</button>
+    <h3 id="myAnswer"></h3>
+</body>
+</html>

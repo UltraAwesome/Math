@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midpoint</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+  <script>
+    let solve = function() {
+    let a = document.getElementById('a').value;
+    let b = document.getElementById('b').value;
+    let c = document.getElementById('c').value;
+    let inSquareroot = b ** 2 - 4 * a * c;
+    let bForm = b * -1
+    let bottom = a*2
+    let squareRoot = Math.sqrt(inSquareroot);
+    let quad1 = (bForm + squareRoot)/bottom
+    let quad2 = (bForm - squareRoot)/bottom
+      let newText = "X=" + quad1 + " " + "X=" + quad2;
+      document.getElementById('answer').innerHTML = newText;
+    }
+  </script>
+  <div style="text-align: center;">
+    <a href="index.html">Home Page</a>
+    <h2>A:
+      <input type="text" id="a"/>
+    </h2>
+    <h2>B:
+      <input type="text" id="b"/>
+    </h2>
+    <h2>C:
+     <input type="text" id="c"/>
+    </h2>
+    <button id="solveButton" onclick="solve()">Solve</button>
+    <h3 id="myAnswer"></h3>
+</body>
+</html>

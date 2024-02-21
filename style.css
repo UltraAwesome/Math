@@ -1,0 +1,79 @@
+body {
+  background-color: #000000;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+  h1 {
+  color: #cccccc;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+h2 {
+  color: whitesmoke;
+  text-align: center;
+  font-weight: bold;
+}
+h3{
+  color: white;
+  text-align: center;
+}
+
+/* This is code for links */
+a:link {
+  color: #ff0000;
+  text-decoration: none;
+  text-align: center;
+}
+a:visited {
+  color: #ff0000;
+  text-decoration: none;
+  text-align: center;
+}
+a:hover {
+  color: #850000;
+  text-decoration: underline;
+  text-align: center;
+}
+a:active {
+  color: #850000;
+  text-decoration: underline;
+  text-align: center;
+}
+button {
+  background-color: #c80000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+button:hover {
+  background-color:#960000;
+}
+button,
+input[type="text"] {
+  background-color: #c80000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+button:hover,
+input[type="text"]:focus {
+  background-color: #960000;
+}
